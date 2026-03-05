@@ -1,0 +1,15 @@
+El Problema:
+
+Recibes un DataFrame de pandas que contiene registros de distintas categorías con valores numéricos asociados. Deseas identificar los valores más altos dentro de cada categoría utilizando percentiles.
+
+Tu Misión:
+
+Escribe una función llamada detectar_top_percentile(df, percentile) que realice lo siguiente:
+
+- Agrupe el DataFrame por la columna "category".
+
+- Para cada categoría, calcule el percentil indicado sobre la columna "value".
+
+- Identifique las filas cuyo valor sea mayor o igual al percentil calculado dentro de su categoría.
+
+- Devuelva un entero que represente el número total de filas que cumplen esa condición.
