@@ -1,0 +1,19 @@
+El Problema:
+
+Recibes un DataFrame de pandas que contiene diferentes grupos y etiquetas de clase asociadas a cada observación. Deseas medir el nivel de incertidumbre (diversidad) de clases dentro de cada grupo.
+
+Tu Misión:
+
+Escribe una función llamada calcular_entropia_por_grupo(df) que realice lo siguiente:
+
+- Para cada valor distinto en la columna "group", calcule la distribución de probabilidad de la columna "class_label".
+
+- Calcule la entropía de Shannon para cada grupo utilizando la fórmula:
+
+      H = - sum(p_i * log2(p_i))
+
+- Devuelva un DataFrame con dos columnas:
+      - "group"
+      - "entropy"
+
+- El DataFrame resultante debe estar ordenado alfabéticamente por la columna "group".

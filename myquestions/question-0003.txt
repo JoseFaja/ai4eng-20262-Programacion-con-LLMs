@@ -1,0 +1,21 @@
+El Problema:
+
+Recibes un conjunto de datos numéricos para un problema de regresión. 
+Además, cada observación tiene asociado un peso que indica su importancia relativa.
+
+Deseas entrenar un modelo de regresión y evaluar su desempeño utilizando 
+un error cuadrático medio ponderado (Weighted Mean Squared Error).
+
+Tu Misión:
+
+Escribe una función llamada weighted_regression_score(X, y, weights) que realice lo siguiente:
+
+- Entrene un modelo de regresión Ridge (de sklearn.linear_model) utilizando X e y.
+
+- Genere las predicciones sobre los mismos datos X.
+
+- Calcule el error cuadrático medio ponderado utilizando la fórmula:
+
+      WMSE = sum( weights_i * (y_i - y_pred_i)^2 ) / sum(weights_i)
+
+- Devuelva el valor del error ponderado como un float.

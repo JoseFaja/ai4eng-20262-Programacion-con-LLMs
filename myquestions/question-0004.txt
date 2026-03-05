@@ -1,0 +1,27 @@
+El Problema:
+
+Recibes un conjunto de datos para un problema de clasificación multiclase.
+
+Deseas entrenar un modelo y evaluar su desempeño utilizando una matriz de confusión normalizada por filas.
+
+Tu Misión:
+
+Escribe una función llamada matriz_confusion_normalizada(X, y) que realice lo siguiente:
+
+- Separe los datos en entrenamiento y prueba utilizando train_test_split con:
+      test_size=0.3
+      random_state=42
+
+- Entrene un modelo LogisticRegression (de sklearn.linear_model) 
+  configurado con:
+      max_iter=1000
+      multi_class='auto'
+
+- Genere predicciones sobre el conjunto de prueba.
+
+- Calcule la matriz de confusión utilizando confusion_matrix 
+  (de sklearn.metrics).
+
+- Normalice la matriz por filas, de modo que cada fila sume 1.
+
+- Devuelva la matriz normalizada como un array de numpy.
