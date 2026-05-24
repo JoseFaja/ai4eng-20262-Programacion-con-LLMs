@@ -1,0 +1,15 @@
+La respuesta 0462 no puede ser evaluada correctamente debido a un error en el generador de casos de uso proporcionado.
+
+El validador ejecuta automáticamente la primera función encontrada en el archivo del generador:
+
+    gen_output = gen_funcs[0]()
+
+Sin embargo, en el archivo correspondiente la primera función definida es:
+
+    resumir_actividad_diaria(df, columna_fecha, columna_usuario, columna_evento)
+
+la cual requiere argumentos obligatorios.
+
+Por ello el generador falla antes de que la solución pueda ser evaluada.
+
+La implementación de answer-0462.py sí resuelve correctamente el problema cuando se ejecuta manualmente con los casos de uso esperados.
